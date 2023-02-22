@@ -20,7 +20,7 @@ const makeList = images.map(option => {
   const imgElem = document.createElement('img');
   imgElem.src = option.url;
   imgElem.alt = option.alt;
-  imgElem.width = 240;
+  imgElem.width = 280;
   
   itemEl.insertAdjacentElement("beforeend", imgElem);
   return itemEl;
