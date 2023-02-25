@@ -12,7 +12,7 @@ function handleSubmit (event) {
 
     
     if (email === "" || password === "") {
-        form.textContent = "Будь ласка, заповніть всі поля форми!";
+        return alert ("Будь ласка, заповніть всі поля форми!");
     }  else { const formData = {email, password};
         console.log(formData);
     };
