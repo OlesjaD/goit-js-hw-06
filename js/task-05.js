@@ -7,7 +7,8 @@ const nameOutput = document.querySelector('#name-output');
 form.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-    // event.preventDefault();
-    nameOutput.textContent = event.currentTarget.value;
-     
+    let textInput = event.currentTarget.value;
+    nameOutput.textContent = textInput;
+    if (textInput === "")
+    nameOutput.textContent = "Anonymous";
 };
